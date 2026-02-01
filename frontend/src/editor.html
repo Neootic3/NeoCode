@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Head-->
+    <!-- Eruda Web Console (for debugging) -->
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, nofollow">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/styles/editor.css">
+    <title>NeoCode | Editor</title>
+</head>
+<body>
+
+<div class="topbar">
+  <i class="fa-solid fa-play topbarIcon" id="runCode"></i>
+  <i class="fa-solid fa-bars topbarIcon" id="menuToggle" ></i>
+</div>
+<div id="container"><!--Injected Elements--></div>
+<pre id="highlight" aria-hidden="true"></pre>
+<textarea class="editor" id="editor" autocapitalize="off"></textarea>
+<div class="lineCounter" id="lineCounter"></div>
+<div class="menu" id="menu">
+  <ol>
+    <li class="file">
+      <i id="fileIcon"></i>
+      <p id="fileName"></p>
+</li>
+    </ol>
+  </div>
+
+<!--Code-->
+
+<script src="https://kit.fontawesome.com/dcfb4e17aa.js" crossorigin="anonymous"></script>
+<script src="/scripts/editor.js"></script>
+<script src="/scripts/functions/syntax.mjs"></script>
+<script src="/scripts/functions/lineCounter.js"></script>
+<script src="/scripts/functions/autocomplete.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "clear && bash start.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "egalink-toasty.js": "^1.5.5",
+    "express": "^5.2.1",
+    "jsdom": "^27.4.0",
+    "jsonwebtoken": "^9.0.3",
+    "mailersend": "^2.6.0",
+    "nodemailer": "^7.0.12",
+    "pg": "^8.17.2",
+    "sass": "^1.97.3"
+  }
+}

@@ -1,0 +1,206 @@
+/* RESET */
+*, *::before, *::after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: system-ui, sans-serif;
+  background: none;
+  color: #222;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 30px;
+  width: 100vw;
+  background: #2b2b2b;
+}
+
+.icon {
+  color: white;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.topbarIcon {
+  color: white;
+  width: 24px;
+  font-size: 18px;
+  line-height: 1;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  height: calc(100vh - 30px);
+  width: 0;
+  overflow: hidden;
+  background: #282828;
+  z-index: 10;
+  transition: width 0.4s ease;
+}
+
+.menuAnim {
+  width: 130px;
+}
+
+/* MENU LIST */
+.menu ol {
+  list-style: none;
+}
+
+/* FILE ITEM */
+.file {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  transition: background 0.3s ease;
+}
+
+.file:hover {
+  background: #4f4f4f;
+  cursor: pointer;
+}
+
+/* FILE ICON */
+#fileIcon {
+  width: 16px;
+  height: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FILE NAME */
+#fileName {
+  color: white;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* EDITOR */
+.editor {
+  position: absolute;
+  box-sizing: border-box;
+  top: 30px;
+  left: 20px;
+  width: calc(100% - 20px);
+  height: calc(100vh - 30px);
+
+  resize: none;
+  border: none;
+  outline: none;
+
+  background: transparent;
+  color: transparent;
+  caret-color: #fbff47;
+
+  padding: 0;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+
+  overflow: auto;
+  z-index: 1;
+}
+
+.editor::selection {
+  background-color: #3ca2d163;
+}
+
+#highlight {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: calc(100% - 20px);
+  height: calc(100vh - 30px);
+  padding: 0;
+
+  font-family: monospace;
+  font-weight: 1000;
+  font-size: 14px;
+  line-height: 1.5;
+
+  background: #232323 !important;
+  color: #eaeaea;
+
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* LINE COUNTER */
+.lineCounter {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 30px;
+  left: 0;
+
+  width: 20px;
+  height: calc(100vh - 30px);
+  padding: 0;
+
+  font-family: monospace;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: white;
+  background: #232323;
+
+  z-index: 5;
+  overflow-y: auto;
+  white-space: pre;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Syntax Colors */
+.keyword  { color: #38bdf8; }
+.string   { color: #c67632; }
+.number   { color: #fbbf24; }
+.comment  { color: #64748b; font-style: italic; }
+.builtin  { color: #f472b6; }
+.func  { color: #f97316; }
+.operator  { color: #ef4444; }
+.punctuation  { color: #fbbf19; }
+.boolean { color: #c276f8; font-style: italic;}
+.propety { color: #d34500; }
+
+.paren-match {
+  border: 1px solid white;
+  border-radius: 4px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Eruda Web Console (for debugging) -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stack+Sans+Text:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Home Page for all created rooms">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>NeoCode | Home</title>
+</head>
+<body>
+<div class="topbar" id="topbar">
+    <div class="userIcon" id="userIcon">
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </div>
+
+<div class="main" id="main">
+  <h1>Rooms:</h1>
+  <a href="#popup" class="openModal" id="createRoom">
+    Create Room
+    <div>
+      <i class="fa-solid fa-plus"></i>
+    </div>
+</a>
+  <div id="roomList">
+    <div id="room" class="room">
+      <img src="pages/roomThumbnail.png">
+      <h2 id="roomName">Name</h2>
+      <p id="userName">@username</p>
+    </div>
+  </div>
+</div>
+
+<div id="popup">
+  <div class="modal">
+  <a href="#" class="x"><i class="fa-solid fa-x"></i></a>
+    <h2>Create Room</h2>
+    <form id="RoomForm">
+      <label for="name">Name:</label>
+      <input id="name" type="text" maxlength="30" placeholder="Simple Website" minlength="4" spellcheck="true">
+
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="js">JS</option>
+        <option value="php">PHP</option>
+        <option value="ruby">Ruby</option>
+      </select>
+      <input type="submit" value="Submit"></input>
+    </form>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/dcfb4e17aa.js" crossorigin="anonymous"></script>
+<script src="../scripts/home.js"></script>
+</body>
+</html>

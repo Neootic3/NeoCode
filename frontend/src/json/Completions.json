@@ -1,0 +1,7 @@
+{
+  "keywords": ["const","let","var","function","return","if","else","for","while","class","new","import","from","try","catch","finally","throw","switch","case","break","default","continue","public","fetch","then"],
+  "builtins": ["Math","Date","Array","Object","String","Number","Boolean","RegExp","JSON","console","window","document"],
+  "methods": ["log","push","pop","slice","map","filter","reduce"],
+  "properties": ["length","prototype","constructor"],
+  "events": ["click","input","keydown","keyup"]
+}

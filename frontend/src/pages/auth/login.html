@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Eruda Web Console (for debugging) -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Login Page">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="../../styles/auth.css">
+  <link href="../../../ToastyJS/dist/toasty.min.css" rel="stylesheet">
+  <title>NeoCode | Login</title>
+</head>
+<body>
+  <div class="register-container">
+    <form id="registerForm" class="register-form" novalidate>
+      <h2>Login</h2>
+      <span>Welcome Back!</span>
+
+      <button id="googleBtn" type="button">
+        <img src="../../assets/google.png" class="">
+        <span>Login With Google</span>
+      </button>
+      <div class="divider"><hr><span>Or</span><hr></div>
+
+      <label for="email"><i class="fa-solid fa-at icon"></i>Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      <span class="error-message"><i class="fa-solid fa-triangle-exclamation"></i>Invalid Email</span>
+
+      <label for="password">
+        <i class="fa-solid fa-key icon"></i>Password:</label>
+      <input type="password" id="password" name="password" placeholder="******" required>
+      <span class="error-message"><i class="fa-solid fa-triangle-exclamation"></i>Invalid Password</span>
+
+      <button type="submit">Register</button>
+      <span class="question">Don't have an account yet? <a href="/register">Register</a></span>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/dcfb4e17aa.js" crossorigin="anonymous"></script>
+  <script src="../../scripts/auth/login.js"></script>
+</body>
+</html>

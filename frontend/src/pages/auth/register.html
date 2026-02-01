@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Eruda Web Console (for debugging) -->
+  <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+  <script>eruda.init();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Register Page">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles/auth.css">
+  <title>NeoCode | Register</title>
+</head>
+<body>
+  <div class="register-container">
+    <form id="registerForm" class="register-form" novalidate>
+      <h2>Register</h2>
+      <span>Begin The Journey!</span>
+
+      <button id="googleBtn" type="button">
+        <img src="/assets/google.png" class="">
+        <span>Login With Google</span>
+      </button>
+      <div class="divider"><hr><span>Or</span><hr></div>
+
+      <label for="username"><i class="fa-solid fa-user icon"></i>Username:</label>
+      <input type="text" id="username" name="username" placeholder="John Doe" required minlength="3" maxlength="10">
+      <span class="error-message">Username must be 3-10 characters</span>
+
+      <label for="email"><i class="fa-solid fa-at icon"></i>Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      <span class="error-message">Please enter a valid email</span>
+
+      <label for="password">
+        <i class="fa-solid fa-key icon"></i>Password:</label>
+      <input type="password" id="password" name="password" placeholder="******" required>
+      <span class="error-message">Password cannot be empty</span>
+
+      <button type="submit">Register</button>
+      <span class="question">Already have an account? <a href="/login">Login</a></span>
+    </form>
+  </div>
+
+<!-- Email Verification Popup -->
+<div id="emailPopup" class="popup">
+  <div class="popup-box">
+    <img src="/assets/checkmark.png">
+    <h3>Email Verification</h3>
+    <p>Please check your inbox and verify your email.</p>
+    <button id="closePopup">Got it</button>
+  </div>
+</div>
+
+  <script src="https://kit.fontawesome.com/dcfb4e17aa.js" crossorigin="anonymous"></script>
+  <script src="/scripts/auth/register.js"></script>
+</body>
+</html>

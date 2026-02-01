@@ -1,0 +1,34 @@
+<template>
+<style>
+.contextMenu {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  text-align: left;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  background: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.contextMenu .icon {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+</style>
+
+<div class="contextMenu" id="contextMenu">
+  <button class="icon" id="paste"><i class="fa-regular fa-clipboard"></i></button>
+  <button class="icon" id="cut"><i class="fa-solid fa-scissors"></i></button>
+  <button class="icon" id="copy"><i class="fa-regular fa-paste"></i></button>
+  <button class="icon" id="select"><i class="fa-solid fa-a"></i></button>
+</div>
+
+
+</template>
