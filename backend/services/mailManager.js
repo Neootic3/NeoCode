@@ -8,7 +8,7 @@ dotenv.config()
 
 // Initialize MailerSend with your API key
 const mailerSend = new MailerSend({
-    apiKey: process.env.TOKEN, // Make sure this is your Send-Email token
+    apiKey: process.env.MAIL_TOKEN, // Make sure this is your Send-Email token
 });
 
 // Set your verified sender

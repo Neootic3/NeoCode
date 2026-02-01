@@ -4,11 +4,11 @@ const { Pool } = pkg;
 dotenv.config()
 
 const pool = new Pool({
-  user: 'neon',
-  host: '127.0.0.1',
-  database: 'NeoDB',
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
   password: process.env.DB_PASS,
-  port: 5432
+  port: process.env.DB_PORT
 });
 
 export default pool;

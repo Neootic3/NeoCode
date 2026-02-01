@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "clear && bash start.sh"
+    "start": "bash start.sh"
   },
   "keywords": [],
   "author": "",
